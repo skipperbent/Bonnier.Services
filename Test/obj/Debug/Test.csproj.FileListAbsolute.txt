@@ -14,3 +14,4 @@ D:\Visual Studio\Bonnier.Services\Test\bin\Bonnier.Service.pdb
 D:\Visual Studio\Bonnier.Services\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
 D:\Visual Studio\Bonnier.Services\Test\obj\Debug\Test.dll
 D:\Visual Studio\Bonnier.Services\Test\obj\Debug\Test.pdb
+D:\Visual Studio\Bonnier.Services\Test\bin\Newtonsoft.Json.dll

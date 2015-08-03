@@ -7,6 +7,8 @@ using System.Security.Policy;
 using System.Text;
 using System.Web;
 using System.Web.Helpers;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace Bonnier.Service
 {
@@ -70,18 +72,20 @@ namespace Bonnier.Service
 			postData.Add("_method=" + Enum.GetName(typeof (Method), method).ToUpper());
 
 			request.Headers = headers;
-			request.Timeout = 5000;
+			request.Timeout = 10000;
 
 			ServicePointManager.ServerCertificateValidationCallback += (sender, certificate, chain, sslPolicyErrors) => true;
 
 			request.ContentLength = data.Length;
 
-			// Urldecode post-data
+			// Urlencode post-data
 			if (postData.Count > 0)
 			{
 				for (var i = 0; i < postData.Count; i++)
 				{
-					postData[i] = postData[i];
+					var tmp = postData[i].Split('=');
+					tmp[1] = HttpUtility.UrlEncode(tmp[1]);
+					postData[i] = tmp[0] + "=" + tmp[1];
 				}
 			}
 
@@ -150,7 +154,9 @@ namespace Bonnier.Service
 				throw new ApiException("Response was empty");
 			}
 
-			dynamic result = Json.Decode(output);
+			dynamic result = JObject.Parse(output);
+
+			//dynamic result = Json.Decode(output);
 
 			if (result == null)
 			{
@@ -159,8 +165,8 @@ namespace Bonnier.Service
 
 			if (result.status != null)
 			{
-				int status = (result.status != null) ? (int)result.status : 0;
-				throw new ApiException(result.error, status);
+				int status = (result.status != null) ? (int)result.status.Value : 0;
+				throw new ApiException(result.error.Value, status);
 			}
 
 			// We have recieved a collection of items

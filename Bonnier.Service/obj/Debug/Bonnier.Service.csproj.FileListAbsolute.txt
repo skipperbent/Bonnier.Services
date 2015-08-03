@@ -8,3 +8,4 @@ D:\Visual Studio\Bonnier.Services\Bonnier.Service\bin\Debug\Bonnier.Service.pdb
 D:\Visual Studio\Bonnier.Services\Bonnier.Service\obj\Debug\Bonnier.Service.csprojResolveAssemblyReference.cache
 D:\Visual Studio\Bonnier.Services\Bonnier.Service\obj\Debug\Bonnier.Service.dll
 D:\Visual Studio\Bonnier.Services\Bonnier.Service\obj\Debug\Bonnier.Service.pdb
+D:\Visual Studio\Bonnier.Services\Bonnier.Service\bin\Debug\Newtonsoft.Json.dll
