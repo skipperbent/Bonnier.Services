@@ -1,0 +1,5 @@
+D:\Visual Studio\Bonnier.Services\Bonnier.Service\bin\Release\Bonnier.Service.dll
+D:\Visual Studio\Bonnier.Services\Bonnier.Service\bin\Release\Bonnier.Service.pdb
+D:\Visual Studio\Bonnier.Services\Bonnier.Service\obj\Release\Bonnier.Service.dll
+D:\Visual Studio\Bonnier.Services\Bonnier.Service\obj\Release\Bonnier.Service.pdb
+D:\Visual Studio\Bonnier.Services\Bonnier.Service\obj\Release\Bonnier.Service.csprojResolveAssemblyReference.cache

@@ -1,0 +1,8 @@
+D:\Visual Studio\Bonnier.Services\Test\bin\Test.dll.config
+D:\Visual Studio\Bonnier.Services\Test\bin\Test.dll
+D:\Visual Studio\Bonnier.Services\Test\bin\Test.pdb
+D:\Visual Studio\Bonnier.Services\Test\bin\Bonnier.Service.dll
+D:\Visual Studio\Bonnier.Services\Test\bin\Bonnier.Service.pdb
+D:\Visual Studio\Bonnier.Services\Test\obj\Release\Test.csprojResolveAssemblyReference.cache
+D:\Visual Studio\Bonnier.Services\Test\obj\Release\Test.dll
+D:\Visual Studio\Bonnier.Services\Test\obj\Release\Test.pdb
