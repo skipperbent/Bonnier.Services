@@ -1,0 +1,10 @@
+C:\Users\simon\Desktop\bilindex-import-multi-thread\Bonnier.Service\obj\Debug\Bonnier.Service.csprojResolveAssemblyReference.cache
+C:\Users\simon\Desktop\bilindex-import-multi-thread\Bonnier.Service\bin\Debug\Bonnier.Service.dll
+C:\Users\simon\Desktop\bilindex-import-multi-thread\Bonnier.Service\bin\Debug\Bonnier.Service.pdb
+C:\Users\simon\Desktop\bilindex-import-multi-thread\Bonnier.Service\obj\Debug\Bonnier.Service.dll
+C:\Users\simon\Desktop\bilindex-import-multi-thread\Bonnier.Service\obj\Debug\Bonnier.Service.pdb
+D:\Visual Studio\Bonnier.Services\Bonnier.Service\bin\Debug\Bonnier.Service.dll
+D:\Visual Studio\Bonnier.Services\Bonnier.Service\bin\Debug\Bonnier.Service.pdb
+D:\Visual Studio\Bonnier.Services\Bonnier.Service\obj\Debug\Bonnier.Service.csprojResolveAssemblyReference.cache
+D:\Visual Studio\Bonnier.Services\Bonnier.Service\obj\Debug\Bonnier.Service.dll
+D:\Visual Studio\Bonnier.Services\Bonnier.Service\obj\Debug\Bonnier.Service.pdb

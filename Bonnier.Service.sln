@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bonnier.Service", "Bonnier.Service\Bonnier.Service.csproj", "{9A1C6017-5556-4848-876C-C6916AFD1D7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{89A24740-2D38-4093-AE55-8330A6881EBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A1C6017-5556-4848-876C-C6916AFD1D7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A1C6017-5556-4848-876C-C6916AFD1D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A1C6017-5556-4848-876C-C6916AFD1D7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A1C6017-5556-4848-876C-C6916AFD1D7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89A24740-2D38-4093-AE55-8330A6881EBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89A24740-2D38-4093-AE55-8330A6881EBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89A24740-2D38-4093-AE55-8330A6881EBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89A24740-2D38-4093-AE55-8330A6881EBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,8 @@
+C:\Users\simon\Desktop\bilindex-import-multi-thread\Test\bin\Test.dll.config
+C:\Users\simon\Desktop\bilindex-import-multi-thread\Test\bin\Test.dll
+C:\Users\simon\Desktop\bilindex-import-multi-thread\Test\bin\Test.pdb
+C:\Users\simon\Desktop\bilindex-import-multi-thread\Test\bin\Bonnier.Service.dll
+C:\Users\simon\Desktop\bilindex-import-multi-thread\Test\bin\Bonnier.Service.pdb
+C:\Users\simon\Desktop\bilindex-import-multi-thread\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\Users\simon\Desktop\bilindex-import-multi-thread\Test\obj\Debug\Test.dll
+C:\Users\simon\Desktop\bilindex-import-multi-thread\Test\obj\Debug\Test.pdb
