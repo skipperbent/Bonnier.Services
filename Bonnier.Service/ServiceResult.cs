@@ -10,7 +10,6 @@ namespace Bonnier.Service
 	public class ServiceResult : RestBase
 	{
 		List<ServiceItem> _rows;
-		public string Response { get; set; }
 
 		public ServiceResult(string username, string secret) : base(username, secret)
 		{

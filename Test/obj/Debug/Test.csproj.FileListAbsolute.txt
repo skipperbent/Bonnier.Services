@@ -6,3 +6,11 @@ C:\Users\simon\Desktop\bilindex-import-multi-thread\Test\bin\Bonnier.Service.pdb
 C:\Users\simon\Desktop\bilindex-import-multi-thread\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
 C:\Users\simon\Desktop\bilindex-import-multi-thread\Test\obj\Debug\Test.dll
 C:\Users\simon\Desktop\bilindex-import-multi-thread\Test\obj\Debug\Test.pdb
+D:\Visual Studio\Bonnier.Services\Test\bin\Test.dll.config
+D:\Visual Studio\Bonnier.Services\Test\bin\Test.dll
+D:\Visual Studio\Bonnier.Services\Test\bin\Test.pdb
+D:\Visual Studio\Bonnier.Services\Test\bin\Bonnier.Service.dll
+D:\Visual Studio\Bonnier.Services\Test\bin\Bonnier.Service.pdb
+D:\Visual Studio\Bonnier.Services\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+D:\Visual Studio\Bonnier.Services\Test\obj\Debug\Test.dll
+D:\Visual Studio\Bonnier.Services\Test\obj\Debug\Test.pdb

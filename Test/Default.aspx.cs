@@ -16,12 +16,15 @@ namespace Test
 			var service = new ServiceContent("netTest", "A11555640D4747A5B27B46333260F2F3");
 			service.Development = true;
 
-			var results = service.Get();
+			service.Row.title = "test";
+			service.Save();
 
-			foreach (ServiceItem result in results)
+			/*var results = service.Get();
+
+			foreach (var result in results.GetRows())
 			{
 				var title = result.Row.title;
-			}
+			}*/
 
 		}
 	}

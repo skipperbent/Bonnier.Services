@@ -13,9 +13,19 @@ namespace Bonnier.Service.IndexSearch
 			
 		}
 
-		public List<ServiceItem> Get()
+		public ServiceResult Get()
 		{
-			return (List<ServiceItem>)Api();
+			return (ServiceResult)Api();
+		}
+
+		public ServiceItem GetById(string id)
+		{
+			return (ServiceItem)Api(id);
+		}
+
+		public ServiceItem Delete(string id)
+		{
+			return (ServiceItem) Api(id, Method.Delete);
 		}
 
 		protected override ServiceItem OnCreateItem()

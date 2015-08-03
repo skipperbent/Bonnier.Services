@@ -23,6 +23,7 @@ namespace Bonnier.Service
 		public string Username { get; set; }
 		public string Secret { get; set; }
 		public bool PostJson { get; set; }
+		public string Response { get; set; }
 
 		protected RestBase(string username, string secret)
 		{
@@ -33,6 +34,11 @@ namespace Bonnier.Service
 		protected abstract string GetServiceUrl();
 		protected abstract ServiceItem OnCreateItem();
 		protected abstract ServiceResult OnCreateResult();
+
+		public object Api(string url)
+		{
+			return Api(url, Method.Get);
+		}
 
 		public object Api()
 		{
@@ -46,7 +52,7 @@ namespace Bonnier.Service
 
 		public object Api(string url, Method method, params string[] data)
 		{
-			HttpWebRequest request = (HttpWebRequest) WebRequest.Create(GetServiceUrl().Trim('/') + "/" + url);
+			HttpWebRequest request = (HttpWebRequest) WebRequest.Create((GetServiceUrl().Trim('/') + "/" + url).Trim());
 
 			var postData = new List<string>();
 
@@ -61,7 +67,7 @@ namespace Bonnier.Service
 				String.Format("Authorization: Basic {0}", Encoding.Base64Encode(Username + ":" + Secret))
 			};
 
-			postData.Add("_method=" + Enum.GetName(typeof (Method), method));
+			postData.Add("_method=" + Enum.GetName(typeof (Method), method).ToUpper());
 
 			request.Headers = headers;
 			request.Timeout = 5000;
@@ -75,16 +81,27 @@ namespace Bonnier.Service
 			{
 				for (var i = 0; i < postData.Count; i++)
 				{
-					postData[i] = HttpUtility.UrlDecode(postData[i]);
+					postData[i] = postData[i];
 				}
 			}
 
 			if (method != Method.Get)
 			{
 				request.Method = "POST";
-				request.ContentType = "text/json";
 
-				var post = (PostJson) ? Json.Encode(postData.ToArray()) : String.Join("&", postData.ToArray());
+				string post = string.Empty;
+
+				// If we post as json, set the correct format
+				if (PostJson)
+				{
+					request.ContentType = "text/json";
+					post = Json.Encode(postData.ToArray());
+				}
+				else
+				{
+					request.ContentType = "application/x-www-form-urlencoded";
+					post = String.Join("&", postData.ToArray());
+				}
 
 				// Set content length
 				request.ContentLength = post.Length;
@@ -98,9 +115,25 @@ namespace Bonnier.Service
 
 			string output;
 
-			using (var response = request.GetResponse())
+			try
 			{
-				var responseStream = response.GetResponseStream();
+				using (var response = request.GetResponse())
+				{
+					var responseStream = response.GetResponseStream();
+					if (responseStream == null)
+					{
+						throw new ApiException("Response was empty");
+					}
+
+					using (var reader = new StreamReader(responseStream))
+					{
+						output = reader.ReadToEnd();
+					}
+				}
+			}
+			catch (WebException ex)
+			{
+				var responseStream = ex.Response.GetResponseStream();
 				if (responseStream == null)
 				{
 					throw new ApiException("Response was empty");
@@ -126,7 +159,7 @@ namespace Bonnier.Service
 
 			if (result.status != null)
 			{
-				int status = (result.status) ? (int) result.status : 0;
+				int status = (result.status != null) ? (int)result.status : 0;
 				throw new ApiException(result.error, status);
 			}
 
@@ -145,7 +178,8 @@ namespace Bonnier.Service
 					rows.Add(instance);
 				}
 
-				return rows;
+				collection.SetRows(rows);
+				return collection;
 			}
 
 			var single = OnCreateItem();
