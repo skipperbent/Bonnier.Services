@@ -6,7 +6,6 @@ using System.Net;
 using System.Security.Policy;
 using System.Text;
 using System.Web;
-using System.Web.Helpers;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -99,7 +98,7 @@ namespace Bonnier.Service
 				if (PostJson)
 				{
 					request.ContentType = "text/json";
-					post = Json.Encode(postData.ToArray());
+					post =  JsonConvert.SerializeObject(postData.ToArray());
 				}
 				else
 				{
