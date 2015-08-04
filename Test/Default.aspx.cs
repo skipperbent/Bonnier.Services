@@ -16,8 +16,9 @@ namespace Test
 			var service = new ServiceContent("netTest", "A11555640D4747A5B27B46333260F2F3");
 			service.Development = true;
 
-			service.Row.title = "test";
-			service.Save();
+			var item = service.GetById("576FF4FF07534BDB185B673F100D3EE3");
+
+			var test = "test";
 
 			/*var results = service.Get();
 

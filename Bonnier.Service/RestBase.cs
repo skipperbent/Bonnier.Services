@@ -153,7 +153,7 @@ namespace Bonnier.Service
 				throw new ApiException("Response was empty");
 			}
 
-			dynamic result = JObject.Parse(output);
+			JObject result = JObject.Parse(output);
 
 			//dynamic result = Json.Decode(output);
 
@@ -162,21 +162,21 @@ namespace Bonnier.Service
 				throw new ApiException("Response was empty");
 			}
 
-			if (result.status != null)
+			if (result.Property("status") != null)
 			{
-				int status = (result.status != null) ? (int)result.status.Value : 0;
-				throw new ApiException(result.error.Value, status);
+				int status = (result.GetValue("status") != null) ? result.GetValue("status").Value<int>() : 0;
+				throw new ApiException(result.GetValue("error").Value<string>(), status);
 			}
 
 			// We have recieved a collection of items
-			if (result.rows != null)
+			if (result.Property("rows") != null)
 			{
 				ServiceResult collection = OnCreateResult();
 				collection.Response = output;
 
 				var rows = new List<ServiceItem>();
 
-				foreach (var row in result.rows)
+				foreach (dynamic row in result.Property("rows").Values())
 				{
 					var instance = OnCreateItem();
 					instance.SetRow(row);
@@ -188,7 +188,7 @@ namespace Bonnier.Service
 			}
 
 			var single = OnCreateItem();
-			single.SetRow(result);
+			single.SetRow((dynamic)result);
 			return single;
 		}
 	}
