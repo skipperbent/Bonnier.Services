@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 namespace Bonnier.Service
 {
-	public class ServiceResult : RestBase
+	public class ServiceResult : ServiceItem, IResultType<ServiceResult>
 	{
 		List<ServiceItem> _rows;
 
@@ -56,12 +56,12 @@ namespace Bonnier.Service
 			return String.Empty;
 		}
 
-		protected override ServiceItem OnCreateItem()
+		protected IResultType<ServiceItem> OnCreateItem()
 		{
 			return new ServiceItem(Username, Secret);
 		}
 
-		protected override ServiceResult OnCreateResult()
+		protected IResultType<ServiceResult> OnCreateResult()
 		{
 			return new ServiceResult(Username, Secret);
 		}

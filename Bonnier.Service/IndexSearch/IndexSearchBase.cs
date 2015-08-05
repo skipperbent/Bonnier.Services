@@ -8,7 +8,7 @@ namespace Bonnier.Service.IndexSearch
 	public abstract class IndexSearchBase : ServiceItem
 	{
 		public bool Development { get; set; }
-		private readonly string _type;
+		protected readonly string _type;
 		protected IndexSearchBase(string username, string secret, string type) : base(username, secret)
 		{
 			_type = type;

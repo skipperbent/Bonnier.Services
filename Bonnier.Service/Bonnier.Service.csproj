@@ -61,6 +61,7 @@
     <Compile Include="Trapp\ServiceTranslation.cs" />
     <Compile Include="Trapp\Translation\TranslationCollection.cs" />
     <Compile Include="Trapp\TrappBase.cs" />
+    <Compile Include="IResultType.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Bonnier.Service
 {
-	public class ServiceItem : RestBase
+	public class ServiceItem : RestBase, IResultType<ServiceItem>
 	{
 		public dynamic Row { get; private set; }
 
@@ -20,12 +20,12 @@ namespace Bonnier.Service
 			return String.Empty;
 		}
 
-		protected override ServiceItem OnCreateItem()
+		protected virtual IResultType<ServiceItem> OnCreateItem()
 		{
 			return new ServiceItem(Username, Secret);
 		}
 
-		protected override ServiceResult OnCreateResult()
+		protected virtual IResultType<ServiceResult> OnCreateResult()
 		{
 			return new ServiceResult(Username, Secret);
 		}

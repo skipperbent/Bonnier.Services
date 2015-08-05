@@ -5,7 +5,16 @@ using System.Text;
 
 namespace Bonnier.Service.IndexSearch.Content
 {
-	public class ContentCollection
+	public class ContentCollection : IndexSearchBase
 	{
+
+		public ContentCollection(string username, string secret, string type) : base(username, secret, type) {
+
+		}
+
+
+		public ContentCollection execute() {
+			return (ContentCollection)Api ();
+		}
 	}
 }

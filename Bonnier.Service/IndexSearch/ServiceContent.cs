@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Bonnier.Service.IndexSearch.Content;
 
 namespace Bonnier.Service.IndexSearch
 {
@@ -13,7 +14,7 @@ namespace Bonnier.Service.IndexSearch
 			
 		}
 
-		public ServiceResult Get()
+		public ServiceResult GetCollection()
 		{
 			return (ServiceResult)Api();
 		}
@@ -28,14 +29,14 @@ namespace Bonnier.Service.IndexSearch
 			return (ServiceItem) Api(id, Method.Delete);
 		}
 
-		protected override ServiceItem OnCreateItem()
+		protected ServiceItem OnCreateItem()
 		{
 			return new ServiceContent(Username, Secret);
 		}
 
-		protected override ServiceResult OnCreateResult()
+		protected ContentCollection OnCreateResult()
 		{
-			return new ServiceResult(Username, Secret);
+			return new ContentCollection(Username, Secret, _type);
 		}
 	}
 }

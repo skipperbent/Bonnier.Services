@@ -9,6 +9,7 @@ using System.Web;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
+
 namespace Bonnier.Service
 {
 	public abstract class RestBase
@@ -32,9 +33,15 @@ namespace Bonnier.Service
 			Secret = secret;
 		}
 
-		protected abstract string GetServiceUrl();
-		protected abstract ServiceItem OnCreateItem();
-		protected abstract ServiceResult OnCreateResult();
+		protected abstract string GetServiceUrl ();
+
+		protected virtual IResultType<ServiceItem> OnCreateItem() {
+			return new ServiceItem (Username, Secret);
+		}
+
+		protected virtual IResultType<ServiceResult> OnCreateResult() {
+			return new ServiceResult (Username, Secret);
+		}
 
 		public object Api(string url)
 		{
@@ -171,14 +178,14 @@ namespace Bonnier.Service
 			// We have recieved a collection of items
 			if (result.Property("rows") != null)
 			{
-				ServiceResult collection = OnCreateResult();
+				ServiceResult collection = (ServiceResult)OnCreateResult();
 				collection.Response = output;
 
 				var rows = new List<ServiceItem>();
 
 				foreach (dynamic row in result.Property("rows").Values())
 				{
-					var instance = OnCreateItem();
+					ServiceItem instance = (ServiceItem)OnCreateItem();
 					instance.SetRow(row);
 					rows.Add(instance);
 				}
@@ -187,7 +194,7 @@ namespace Bonnier.Service
 				return collection;
 			}
 
-			var single = OnCreateItem();
+			ServiceItem single = (ServiceItem)OnCreateItem();
 			single.SetRow((dynamic)result);
 			return single;
 		}
