@@ -29,12 +29,12 @@ namespace Bonnier.Service.IndexSearch
 			return (ServiceItem) Api(id, Method.Delete);
 		}
 
-		protected ServiceItem OnCreateItem()
+		protected new ServiceItem OnCreateItem()
 		{
 			return new ServiceContent(Username, Secret);
 		}
 
-		protected ContentCollection OnCreateResult()
+		protected new ContentCollection OnCreateResult()
 		{
 			return new ContentCollection(Username, Secret, _type);
 		}

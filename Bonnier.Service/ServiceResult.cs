@@ -56,12 +56,12 @@ namespace Bonnier.Service
 			return String.Empty;
 		}
 
-		protected IResultType<ServiceItem> OnCreateItem()
+		protected new IResultType<ServiceItem> OnCreateItem()
 		{
 			return new ServiceItem(Username, Secret);
 		}
 
-		protected IResultType<ServiceResult> OnCreateResult()
+		protected new IResultType<ServiceResult> OnCreateResult()
 		{
 			return new ServiceResult(Username, Secret);
 		}

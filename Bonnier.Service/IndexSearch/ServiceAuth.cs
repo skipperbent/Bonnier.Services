@@ -18,12 +18,12 @@ namespace Bonnier.Service.IndexSearch
 			return (ServiceItem)Api(role);
 		}
 
-		protected IResultType<ServiceAuth> OnCreateItem()
+		protected new IResultType<ServiceAuth> OnCreateItem()
 		{
 			return new ServiceAuth(Username, Secret);
 		}
 
-		protected IResultType<ServiceResult> OnCreateResult()
+		protected new IResultType<ServiceResult> OnCreateResult()
 		{
 			return new ServiceResult(Username, Secret);
 		}

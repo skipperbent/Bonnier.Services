@@ -20,12 +20,12 @@ namespace Bonnier.Service
 			return String.Empty;
 		}
 
-		protected virtual IResultType<ServiceItem> OnCreateItem()
+		protected new IResultType<ServiceItem> OnCreateItem()
 		{
 			return new ServiceItem(Username, Secret);
 		}
 
-		protected virtual IResultType<ServiceResult> OnCreateResult()
+		protected new IResultType<ServiceResult> OnCreateResult()
 		{
 			return new ServiceResult(Username, Secret);
 		}
