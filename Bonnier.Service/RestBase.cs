@@ -35,11 +35,13 @@ namespace Bonnier.Service
 
 		protected abstract string GetServiceUrl ();
 
-		protected virtual IResultType<ServiceItem> OnCreateItem() {
+		protected virtual IBaseResultProvider<ServiceItem> OnCreateItem()
+		{
 			return new ServiceItem (Username, Secret);
 		}
 
-		protected virtual IResultType<ServiceResult> OnCreateResult() {
+		protected virtual IBaseResultProvider<ServiceResult> OnCreateResult()
+		{
 			return new ServiceResult (Username, Secret);
 		}
 

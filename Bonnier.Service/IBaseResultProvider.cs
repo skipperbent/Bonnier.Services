@@ -2,7 +2,7 @@
 
 namespace Bonnier.Service
 {
-	public interface IBaseResultProvider
+	public interface IBaseResultProvider<T> where T : RestBase
 	{
 		
 	}

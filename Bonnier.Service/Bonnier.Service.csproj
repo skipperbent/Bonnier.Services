@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="ApiException.cs" />
     <Compile Include="Encoding.cs" />
+    <Compile Include="IBaseResultProvider.cs" />
     <Compile Include="IndexSearch\Content\ContentCollection.cs" />
     <Compile Include="IndexSearch\IndexSearchBase.cs" />
     <Compile Include="IndexSearch\ServiceContentType.cs" />
@@ -61,7 +62,6 @@
     <Compile Include="Trapp\ServiceTranslation.cs" />
     <Compile Include="Trapp\Translation\TranslationCollection.cs" />
     <Compile Include="Trapp\TrappBase.cs" />
-    <Compile Include="IResultType.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

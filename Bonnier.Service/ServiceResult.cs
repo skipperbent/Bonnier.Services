@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 namespace Bonnier.Service
 {
-	public class ServiceResult : ServiceItem, IResultType<ServiceResult>
+	public class ServiceResult : ServiceItem, IBaseResultProvider<ServiceResult>
 	{
 		List<ServiceItem> _rows;
 
@@ -56,12 +56,12 @@ namespace Bonnier.Service
 			return String.Empty;
 		}
 
-		protected new IResultType<ServiceItem> OnCreateItem()
+		protected new IBaseResultProvider<ServiceItem> OnCreateItem()
 		{
 			return new ServiceItem(Username, Secret);
 		}
 
-		protected new IResultType<ServiceResult> OnCreateResult()
+		protected new IBaseResultProvider<ServiceResult> OnCreateResult()
 		{
 			return new ServiceResult(Username, Secret);
 		}

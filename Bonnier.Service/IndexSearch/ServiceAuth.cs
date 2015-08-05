@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Bonnier.Service.IndexSearch
 {
-	public class ServiceAuth : IndexSearchBase, IResultType<ServiceAuth>
+	public class ServiceAuth : IndexSearchBase, IBaseResultProvider<ServiceAuth>
 	{
 		public ServiceAuth(string username, string secret)
 			: base(username, secret, "auth")
@@ -18,12 +18,12 @@ namespace Bonnier.Service.IndexSearch
 			return (ServiceItem)Api(role);
 		}
 
-		protected new IResultType<ServiceAuth> OnCreateItem()
+		protected new IBaseResultProvider<ServiceAuth> OnCreateItem()
 		{
 			return new ServiceAuth(Username, Secret);
 		}
 
-		protected new IResultType<ServiceResult> OnCreateResult()
+		protected new IBaseResultProvider<ServiceResult> OnCreateResult()
 		{
 			return new ServiceResult(Username, Secret);
 		}
