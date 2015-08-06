@@ -4,8 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Bonnier.Service;
-using Bonnier.Service.IndexSearch;
+using Bonnier.Web.Services;
+using Bonnier.Web.Services.IndexSearch;
 
 namespace Test
 {

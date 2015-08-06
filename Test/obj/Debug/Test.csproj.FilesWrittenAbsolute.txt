@@ -6,3 +6,5 @@
 /Workspace/Bonnier.Services/Test/bin/Bonnier.Service.dll
 /Workspace/Bonnier.Services/Test/bin/Bonnier.Service.dll.mdb
 /Workspace/Bonnier.Services/Test/bin/Newtonsoft.Json.dll
+/Workspace/Bonnier.Services/Test/bin/Bonnier.Web.Services.dll
+/Workspace/Bonnier.Services/Test/bin/Bonnier.Web.Services.dll.mdb

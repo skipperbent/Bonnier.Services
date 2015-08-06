@@ -10,7 +10,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 
-namespace Bonnier.Service
+namespace Bonnier.Web.Services
 {
 	public abstract class RestBase
 	{

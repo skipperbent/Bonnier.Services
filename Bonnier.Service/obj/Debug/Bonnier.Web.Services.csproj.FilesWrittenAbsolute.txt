@@ -1,0 +1,6 @@
+/Workspace/Bonnier.Services/Bonnier.Service/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Workspace/Bonnier.Services/Bonnier.Service/bin/Debug/Bonnier.Web.Services.dll.mdb
+/Workspace/Bonnier.Services/Bonnier.Service/bin/Debug/Bonnier.Web.Services.dll
+/Workspace/Bonnier.Services/Bonnier.Service/obj/Debug/Bonnier.Web.Services.dll
+/Workspace/Bonnier.Services/Bonnier.Service/obj/Debug/Bonnier.Web.Services.dll.mdb
+/Workspace/Bonnier.Services/Bonnier.Service/bin/Debug/Newtonsoft.Json.dll

@@ -4,7 +4,7 @@ using System.Dynamic;
 using System.Linq;
 using System.Text;
 
-namespace Bonnier.Service
+namespace Bonnier.Web.Services
 {
 	public class ServiceItem : RestBase, IBaseResultProvider<ServiceItem>
 	{

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bonnier.Service
+namespace Bonnier.Web.Services
 {
 	public interface IBaseResultProvider<T> where T : RestBase
 	{

@@ -5,7 +5,7 @@ using System.Text;
 using System.Dynamic;
 using System.Runtime.InteropServices;
 
-namespace Bonnier.Service
+namespace Bonnier.Web.Services
 {
 	public class ServiceResult : ServiceItem, IBaseResultProvider<ServiceResult>
 	{

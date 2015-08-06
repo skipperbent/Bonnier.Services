@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Bonnier.Service.IndexSearch
+namespace Bonnier.Web.Services.IndexSearch
 {
 	public class ServiceApplication : IndexSearchBase, IBaseResultProvider<ServiceApplication>
 	{

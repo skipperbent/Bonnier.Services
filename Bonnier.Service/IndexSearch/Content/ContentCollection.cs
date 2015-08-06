@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Bonnier.Service.IndexSearch.Content
+namespace Bonnier.Web.Services.IndexSearch.Content
 {
 	public class ContentCollection : IndexSearchBase
 	{

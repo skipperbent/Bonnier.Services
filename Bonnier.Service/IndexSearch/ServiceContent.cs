@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Bonnier.Service.IndexSearch.Content;
+using Bonnier.Web.Services.IndexSearch.Content;
 
-namespace Bonnier.Service.IndexSearch
+namespace Bonnier.Web.Services.IndexSearch
 {
 	public class ServiceContent : IndexSearchBase
 	{
