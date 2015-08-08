@@ -37,8 +37,12 @@ namespace Bonnier.Web.Services
 
 		public string[] GetRowArray()
 		{
-			var row = ((ExpandoObject)Row).ToList();
+			Dictionary<string,string> row = ((ExpandoObject)Row).ToDictionary(v => v.Key, t => t.Value.ToString());
 
+			return UrlencodeDictionary(row);
+
+			/*
+			var row = ((ExpandoObject)Row).ToList();
 			if (row.Count > 0)
 			{
 				var output = new string[row.Count];
@@ -48,7 +52,7 @@ namespace Bonnier.Web.Services
 				}
 				return output;
 			}
-			return new string[] {};
+			return new string[] {};*/
 		}
 
 		public void Update()

@@ -1,0 +1,6 @@
+D:\Visual Studio\Bonnier.Services\Bonnier.Service\bin\Debug\Bonnier.Web.Services.dll
+D:\Visual Studio\Bonnier.Services\Bonnier.Service\bin\Debug\Bonnier.Web.Services.pdb
+D:\Visual Studio\Bonnier.Services\Bonnier.Service\bin\Debug\Newtonsoft.Json.dll
+D:\Visual Studio\Bonnier.Services\Bonnier.Service\obj\Debug\Bonnier.Web.Services.csprojResolveAssemblyReference.cache
+D:\Visual Studio\Bonnier.Services\Bonnier.Service\obj\Debug\Bonnier.Web.Services.dll
+D:\Visual Studio\Bonnier.Services\Bonnier.Service\obj\Debug\Bonnier.Web.Services.pdb

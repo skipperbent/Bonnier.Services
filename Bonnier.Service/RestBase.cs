@@ -45,6 +45,21 @@ namespace Bonnier.Web.Services
 			return new ServiceResult (Username, Secret);
 		}
 
+		public string[] UrlencodeDictionary(Dictionary<string,string> dictionary)
+		{
+			if (dictionary.Count <= 0) return new string[] {};
+			var output = new string[dictionary.Count];
+
+			var i = 0;
+			foreach (var item in dictionary)
+			{
+				output[i] = item.Key + "=" + item.Value;
+				i++;
+			}
+
+			return output;
+		}
+
 		public object Api(string url)
 		{
 			return Api(url, Method.Get);

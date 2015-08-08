@@ -46,6 +46,8 @@
   <ItemGroup>
     <Compile Include="ApiException.cs" />
     <Compile Include="Encoding.cs" />
+    <Compile Include="HvadSynes\Question\QuestionCollection.cs" />
+    <Compile Include="HvadSynes\ServiceQuestion.cs" />
     <Compile Include="IBaseResultProvider.cs" />
     <Compile Include="IndexSearch\Content\ContentCollection.cs" />
     <Compile Include="IndexSearch\IndexSearchBase.cs" />
