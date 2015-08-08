@@ -7,3 +7,13 @@ D:\Visual Studio\Bonnier.Services\Test\bin\Bonnier.Service.pdb
 D:\Visual Studio\Bonnier.Services\Test\obj\Release\Test.csprojResolveAssemblyReference.cache
 D:\Visual Studio\Bonnier.Services\Test\obj\Release\Test.dll
 D:\Visual Studio\Bonnier.Services\Test\obj\Release\Test.pdb
+D:\Visual Studio\Bonnier.Web.Services\Test\bin\Test.dll.config
+D:\Visual Studio\Bonnier.Web.Services\Test\bin\Test.dll
+D:\Visual Studio\Bonnier.Web.Services\Test\bin\Test.pdb
+D:\Visual Studio\Bonnier.Web.Services\Test\bin\Bonnier.Web.Services.dll
+D:\Visual Studio\Bonnier.Web.Services\Test\bin\Newtonsoft.Json.dll
+D:\Visual Studio\Bonnier.Web.Services\Test\bin\Bonnier.Web.Services.pdb
+D:\Visual Studio\Bonnier.Web.Services\Test\bin\Newtonsoft.Json.xml
+D:\Visual Studio\Bonnier.Web.Services\Test\obj\Release\Test.csprojResolveAssemblyReference.cache
+D:\Visual Studio\Bonnier.Web.Services\Test\obj\Release\Test.dll
+D:\Visual Studio\Bonnier.Web.Services\Test\obj\Release\Test.pdb

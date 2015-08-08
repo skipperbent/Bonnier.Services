@@ -1,0 +1,7 @@
+D:\Visual Studio\Bonnier.Web.Services\Bonnier.Web.Services\bin\Release\Bonnier.Web.Services.dll
+D:\Visual Studio\Bonnier.Web.Services\Bonnier.Web.Services\bin\Release\Bonnier.Web.Services.pdb
+D:\Visual Studio\Bonnier.Web.Services\Bonnier.Web.Services\bin\Release\Newtonsoft.Json.dll
+D:\Visual Studio\Bonnier.Web.Services\Bonnier.Web.Services\bin\Release\Newtonsoft.Json.xml
+D:\Visual Studio\Bonnier.Web.Services\Bonnier.Web.Services\obj\Release\Bonnier.Web.Services.csprojResolveAssemblyReference.cache
+D:\Visual Studio\Bonnier.Web.Services\Bonnier.Web.Services\obj\Release\Bonnier.Web.Services.dll
+D:\Visual Studio\Bonnier.Web.Services\Bonnier.Web.Services\obj\Release\Bonnier.Web.Services.pdb

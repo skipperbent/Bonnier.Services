@@ -17,6 +17,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -82,8 +83,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Bonnier.Service\Bonnier.Web.Services.csproj">
-      <Project>{9A1C6017-5556-4848-876C-C6916AFD1D7F}</Project>
+    <ProjectReference Include="..\Bonnier.Web.Services\Bonnier.Web.Services.csproj">
+      <Project>{9a1c6017-5556-4848-876c-c6916afd1d7f}</Project>
       <Name>Bonnier.Web.Services</Name>
     </ProjectReference>
   </ItemGroup>

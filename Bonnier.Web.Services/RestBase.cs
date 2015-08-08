@@ -5,7 +5,6 @@ using System.Linq;
 using System.Net;
 using System.Security.Policy;
 using System.Text;
-using System.Web;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -107,7 +106,7 @@ namespace Bonnier.Web.Services
 				for (var i = 0; i < postData.Count; i++)
 				{
 					var tmp = postData[i].Split('=');
-					tmp[1] = HttpUtility.UrlEncode(tmp[1]);
+					tmp[1] = Uri.EscapeDataString(tmp[1]);
 					postData[i] = tmp[0] + "=" + tmp[1];
 				}
 			}
