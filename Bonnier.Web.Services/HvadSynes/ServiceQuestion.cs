@@ -22,9 +22,9 @@ namespace Bonnier.Web.Services.HvadSynes
 			return "http://52.19.1.159/question/";
 		}
 
-		public ServiceResult GetCollection()
+		public QuestionCollection GetCollection()
 		{
-			return (ServiceResult)Api();
+			return new QuestionCollection(Username, Secret);
 		}
 
 		public ServiceItem GetById(string id)

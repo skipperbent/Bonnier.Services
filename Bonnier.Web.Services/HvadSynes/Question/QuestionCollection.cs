@@ -17,19 +17,22 @@ namespace Bonnier.Web.Services.HvadSynes.Question
 			return (QuestionCollection)Api (Method.Get, UrlencodeDictionary(_data));
 		}
 
-		public void Skip(int skip)
+		public QuestionCollection Skip(int skip)
 		{
 			_data["skip"] = skip.ToString();
+			return this;
 		}
 
-		public void Limit(int limit)
+		public QuestionCollection Limit(int limit)
 		{
 			_data["limit"] = limit.ToString();
+			return this;
 		}
 
-		public void Order(string order)
+		public QuestionCollection Order(string order)
 		{
 			_data["order"] = order;
+			return this;
 		}
 	}
 }

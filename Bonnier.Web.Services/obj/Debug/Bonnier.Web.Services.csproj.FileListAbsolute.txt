@@ -11,3 +11,10 @@ D:\Visual Studio\Bonnier.Services\Bonnier.Web.Services\bin\Debug\Newtonsoft.Json
 D:\Visual Studio\Bonnier.Services\Bonnier.Web.Services\bin\Debug\Newtonsoft.Json.xml
 D:\Visual Studio\Bonnier.Services\Bonnier.Web.Services\obj\Debug\Bonnier.Web.Services.dll
 D:\Visual Studio\Bonnier.Services\Bonnier.Web.Services\obj\Debug\Bonnier.Web.Services.pdb
+D:\Visual Studio\Bonnier.Web.Services\Bonnier.Web.Services\bin\Debug\Bonnier.Web.Services.dll
+D:\Visual Studio\Bonnier.Web.Services\Bonnier.Web.Services\bin\Debug\Bonnier.Web.Services.pdb
+D:\Visual Studio\Bonnier.Web.Services\Bonnier.Web.Services\bin\Debug\Newtonsoft.Json.dll
+D:\Visual Studio\Bonnier.Web.Services\Bonnier.Web.Services\bin\Debug\Newtonsoft.Json.xml
+D:\Visual Studio\Bonnier.Web.Services\Bonnier.Web.Services\obj\Debug\Bonnier.Web.Services.csprojResolveAssemblyReference.cache
+D:\Visual Studio\Bonnier.Web.Services\Bonnier.Web.Services\obj\Debug\Bonnier.Web.Services.dll
+D:\Visual Studio\Bonnier.Web.Services\Bonnier.Web.Services\obj\Debug\Bonnier.Web.Services.pdb
