@@ -35,22 +35,6 @@ namespace Bonnier.Web.Services
 			Row = row;
 		}
 
-		public string[] GetRowArray()
-		{
-			var row = ((ExpandoObject)Row).ToList();
-
-			if (row.Count > 0)
-			{
-				var output = new string[row.Count];
-				for (var i = 0; i < row.Count; i++)
-				{
-					output[i] = row[i].Key + "=" + row[i].Value;
-				}
-				return output;
-			}
-			return new string[] {};
-		}
-
 		public void Update()
 		{
 			this.Row = ((ServiceItem)Api(this.Row.id, Method.Put, GetRowArray())).Row;

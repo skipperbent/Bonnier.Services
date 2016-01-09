@@ -1,0 +1,48 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Bonnier.Web.Services.IndexSearch.Content;
+
+namespace Bonnier.Web.Services.HvadSynes
+{
+	public class ServiceHvadSynes : RestBase
+	{
+		public bool Development { get; set; }
+
+		public ServiceHvadSynes(string username, string secret) : base(username, secret)
+		{
+			
+		}
+
+		protected override string GetServiceUrl()
+		{
+			return "http://52.19.1.159/question/";
+		}
+
+		public ServiceResult GetCollection()
+		{
+			return (ServiceResult)Api();
+		}
+
+		public ServiceItem GetById(string id)
+		{
+			return (ServiceItem)Api(id);
+		}
+
+		public ServiceItem Delete(string id)
+		{
+			return (ServiceItem) Api(id, Method.Delete);
+		}
+
+		protected new ServiceItem OnCreateItem()
+		{
+			return new ServiceContent(Username, Secret);
+		}
+
+		protected new ContentCollection OnCreateResult()
+		{
+			return new ContentCollection(Username, Secret, _type);
+		}
+	}
+}

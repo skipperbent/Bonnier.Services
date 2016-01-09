@@ -1,27 +1,9 @@
 ﻿<Properties StartupItem="Bonnier.Service/Bonnier.Web.Services.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Test/Default.aspx.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Bonnier.Service/HvadSynes/ServiceHvadSynes.cs">
     <Files>
-      <File FileName="Bonnier.Service/RestBase.cs" Line="13" Column="31" />
-      <File FileName="Bonnier.Service/Trapp/ServiceLanguage.cs" Line="6" Column="31" />
-      <File FileName="Bonnier.Service/ServiceItem.cs" Line="7" Column="31" />
-      <File FileName="Bonnier.Service/ApiException.cs" Line="6" Column="31" />
-      <File FileName="Bonnier.Service/Properties/AssemblyInfo.cs" Line="12" Column="29" />
-      <File FileName="Bonnier.Service/Trapp/ServiceState.cs" Line="6" Column="31" />
-      <File FileName="Bonnier.Service/IndexSearch/IndexSearchBase.cs" Line="6" Column="31" />
-      <File FileName="Bonnier.Service/Bonnier.Web.Services.csproj" Line="11" Column="39" />
-      <File FileName="Bonnier.Service/ServiceResult.cs" Line="8" Column="31" />
-      <File FileName="Bonnier.Service/Trapp/ServiceTranslation.cs" Line="6" Column="31" />
-      <File FileName="Bonnier.Service/IndexSearch/ServiceApplication.cs" Line="6" Column="31" />
-      <File FileName="Bonnier.Service/Trapp/TrappBase.cs" Line="6" Column="31" />
-      <File FileName="Bonnier.Service/Encoding.cs" Line="6" Column="31" />
-      <File FileName="Bonnier.Service/IndexSearch/ServiceAuth.cs" Line="6" Column="31" />
-      <File FileName="Bonnier.Service/Trapp/Translation/TranslationCollection.cs" Line="6" Column="31" />
-      <File FileName="Bonnier.Service/IBaseResultProvider.cs" Line="3" Column="31" />
-      <File FileName="Bonnier.Service/IndexSearch/ServiceContent.cs" Line="7" Column="31" />
-      <File FileName="Bonnier.Service/IndexSearch/ServiceContentType.cs" Line="6" Column="31" />
-      <File FileName="Bonnier.Service/IndexSearch/Content/ContentCollection.cs" Line="6" Column="31" />
-      <File FileName="Test/Default.aspx.cs" Line="8" Column="27" />
+      <File FileName="Bonnier.Service/HvadSynes/ServiceHvadSynes.cs" Line="9" Column="37" />
+      <File FileName="Bonnier.Service/RestBase.cs" Line="15" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

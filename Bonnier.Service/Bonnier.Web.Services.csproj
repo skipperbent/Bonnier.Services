@@ -62,6 +62,8 @@
     <Compile Include="Trapp\ServiceTranslation.cs" />
     <Compile Include="Trapp\Translation\TranslationCollection.cs" />
     <Compile Include="Trapp\TrappBase.cs" />
+    <Compile Include="HvadSynes\ServiceHvadSynes.cs" />
+    <Compile Include="HvadSynes\Content\ContentCollection.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
@@ -72,4 +74,8 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <Folder Include="HvadSynes\" />
+    <Folder Include="HvadSynes\Content\" />
+  </ItemGroup>
 </Project>

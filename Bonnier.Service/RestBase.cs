@@ -35,6 +35,20 @@ namespace Bonnier.Web.Services
 
 		protected abstract string GetServiceUrl ();
 
+		public string[] UrlFormatArray(Dictionary<string,string> list)
+		{
+			if (list.Count > 0)
+			{
+				var output = new string[list.Count];
+				for (var i = 0; i < list.Count; i++)
+				{
+					output[i] = list[i].Key + "=" + list[i].Value;
+				}
+				return output;
+			}
+			return new string[] {};
+		}
+
 		protected virtual IBaseResultProvider<ServiceItem> OnCreateItem()
 		{
 			return new ServiceItem (Username, Secret);
